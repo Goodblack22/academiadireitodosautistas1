@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.13 0.005 250);
+  --foreground: oklch(0.96 0.01 80);
+  --card: oklch(0.16 0.006 250);
+  --card-foreground: oklch(0.96 0.01 80);
+  --primary: oklch(0.74 0.105 78);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.92 0.018 75);
+  --secondary-foreground: oklch(0.13 0.005 250);
+  --muted: oklch(0.22 0.006 250);
+  --muted-foreground: oklch(0.75 0.005 80);
+  --accent: oklch(0.74 0.105 78);
+  --accent-foreground: oklch(0.08 0 0);
+  --border: oklch(0.74 0.105 78 / 25%);
+
+  --gold: oklch(0.74 0.105 78);
+  --gold-soft: oklch(0.82 0.07 80);
+  --beige: oklch(0.92 0.018 75);
+  --beige-light: oklch(0.96 0.012 78);
+  --whatsapp: oklch(0.72 0.18 145);
+
+  --gradient-gold: linear-gradient(135deg, oklch(0.82 0.08 80), oklch(0.7 0.11 75), oklch(0.85 0.06 82));
+  --gradient-dark: linear-gradient(180deg, oklch(0.1 0.005 250), oklch(0.16 0.006 250));
+  --gradient-radial-gold: radial-gradient(circle at 50% 0%, oklch(0.74 0.105 78 / 18%), transparent 60%);
+
+  --shadow-gold: 0 10px 40px -10px oklch(0.74 0.105 78 / 35%);
+  --shadow-gold-strong: 0 0 60px oklch(0.74 0.105 78 / 45%), 0 10px 30px -10px oklch(0.74 0.105 78 / 50%);
+  --shadow-premium: 0 25px 60px -15px oklch(0 0 0 / 70%);
+
+  --font-display: "Cinzel", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+a { text-decoration: none; }
+
+/* ─── Utility classes ─── */
+.font-display { font-family: var(--font-display); letter-spacing: 0.06em; }
+.font-serif-display { font-family: var(--font-serif); }
+.text-gold { color: var(--gold); }
+.text-beige { color: var(--beige); }
+.text-beige-light { color: var(--beige-light); }
+.text-muted { color: var(--muted-foreground); }
+
+.gradient-gold-text {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gradient-gold { background: var(--gradient-gold); }
+.bg-radial-gold { background: var(--gradient-radial-gold); }
+.shadow-gold { box-shadow: var(--shadow-gold); }
+.shadow-gold-strong { box-shadow: var(--shadow-gold-strong); }
+.shadow-premium { box-shadow: var(--shadow-premium); }
+
+.btn-gold {
+  background: var(--gradient-gold);
+  color: oklch(0.08 0 0);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  box-shadow: var(--shadow-gold);
+  transition: all 0.35s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid oklch(0.85 0.06 80 / 60%);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold-strong);
+  filter: brightness(1.08);
+}
+
+.btn-whatsapp {
+  background: var(--whatsapp);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: 1px solid oklch(0.72 0.18 145 / 50%);
+  white-space: nowrap;
+}
+.btn-whatsapp:hover {
+  background: oklch(0.78 0.18 145);
+  transform: translateY(-1px);
+}
+
+.card-premium {
+  background: linear-gradient(160deg, oklch(0.16 0.006 250), oklch(0.12 0.005 250));
+  border: 1px solid oklch(0.74 0.105 78 / 22%);
+  border-radius: 0.75rem;
+  transition: all 0.4s ease;
+}
+.card-premium:hover {
+  border-color: oklch(0.74 0.105 78 / 55%);
+  box-shadow: 0 20px 50px -20px oklch(0.74 0.105 78 / 30%);
+  transform: translateY(-4px);
+}
+
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.section-bg {
+  position: relative;
+  overflow: hidden;
+}
+.section-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 0%, oklch(0.74 0.105 78 / 8%), transparent 50%),
+    radial-gradient(ellipse at 80% 100%, oklch(0.74 0.105 78 / 6%), transparent 50%);
+  pointer-events: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+.animate-ping { animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite; }
+
+.badge-premium {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, oklch(0.74 0.105 78 / 12%), oklch(0.74 0.105 78 / 4%));
+  border: 1px solid oklch(0.74 0.105 78 / 35%);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--gold-soft);
+}
+
+/* ─── Layout helpers ─── */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+.section { position: relative; padding: 5rem 0; }
+.section-dark { background: oklch(0.1 0.005 250); }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+
+@media (max-width: 1024px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .lg-grid-2 { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 640px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .sm-stack { flex-direction: column !important; }
+  .section { padding: 3.5rem 0; }
+}
