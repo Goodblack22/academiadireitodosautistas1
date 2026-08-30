@@ -7,8 +7,8 @@ import {
 import { GoldCTA, WhatsappCTA } from "@/components/landing/Buttons";
 import { FloatingWhatsapp, StickyMobileBar } from "@/components/landing/FloatingWhatsapp";
 import luizaPortrait from "@/assets/luiza-portrait.jpg";
-import heroMockups from "@/assets/hero-mockups.png";
-import libraryMockup from "@/assets/library-mockup.png";
+import heroMockups from "@/assets/hero-mockups.webp";
+import libraryMockup from "@/assets/library-mockup.webp";
 import bgTexture from "@/assets/bg-texture.jpg";
 
 const modules = [
@@ -133,7 +133,7 @@ function Hero() {
         </div>
         <div style={{ position: "relative" }}>
           <div className="bg-radial-gold" style={{ position: "absolute", inset: "-2.5rem", filter: "blur(40px)" }} />
-          <img src={heroMockups} alt="Plataforma Academia Direito dos Autistas" className="animate-float" style={{ position: "relative", width: "100%" }} />
+          <img src={heroMockups} alt="Plataforma Academia Direito dos Autistas" className="animate-float" style={{ position: "relative", width: "100%", aspectRatio: "1/1" }} />
         </div>
       </div>
       <style>{`@media(max-width:768px){.container{grid-template-columns:1fr!important}}`}</style>
@@ -226,7 +226,7 @@ function Library() {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3rem", alignItems: "center" }}>
         <div style={{ position: "relative" }}>
           <div className="bg-radial-gold" style={{ position: "absolute", inset: "-2rem", filter: "blur(3rem)", opacity: 0.6 }} />
-          <img src={libraryMockup} alt="Biblioteca jurídica" className="animate-float" loading="lazy" style={{ position: "relative", width: "100%" }} />
+          <img src={libraryMockup} alt="Biblioteca jurídica" className="animate-float" loading="lazy" style={{ position: "relative", width: "100%", aspectRatio: "1/1" }} />
         </div>
         <div>
           <p style={{ color: "var(--muted-foreground)", lineHeight: 1.7, marginBottom: "2rem" }}>
@@ -290,7 +290,7 @@ function ForWho() {
 function Market() {
   return (
     <Section eyebrow="Oportunidade de Mercado" title="O nicho que mais cresce no Direito" dark>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.5rem", maxWidth: "56rem", margin: "0 auto" }}>
+      <div className="grid-3" style={{ maxWidth: "56rem", margin: "0 auto" }}>
         {[
           { n: "+200%", t: "Crescimento de demanda judicial TEA nos últimos 5 anos" },
           { n: "2M+", t: "Pessoas no espectro autista no Brasil — mercado em expansão" },
@@ -341,7 +341,7 @@ function Authority() {
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3rem", alignItems: "center" }}>
         <div style={{ position: "relative", maxWidth: "28rem", margin: "0 auto" }}>
           <div className="bg-radial-gold" style={{ position: "absolute", inset: "-1.5rem", filter: "blur(2rem)" }} />
-          <img src={luizaPortrait} alt="Luíza Lucena" loading="lazy" style={{ position: "relative", borderRadius: "0.5rem", border: "1px solid oklch(0.74 0.105 78 / 30%)", boxShadow: "var(--shadow-premium)", width: "100%" }} />
+          <img src={luizaPortrait} alt="Luíza Lucena" loading="lazy" style={{ position: "relative", borderRadius: "0.5rem", border: "1px solid oklch(0.74 0.105 78 / 30%)", boxShadow: "var(--shadow-premium)", width: "100%", aspectRatio: "803/1183" }} />
         </div>
         <div>
           <div style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.25em", color: "oklch(0.74 0.105 78 / 80%)", marginBottom: "0.75rem" }}>Quem conduz a formação</div>
