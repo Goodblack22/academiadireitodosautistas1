@@ -421,7 +421,7 @@ function Offer() {
               ))}
             </ul>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", alignItems: "center" }}>
-              <GoldCTA href="https://pay.kiwify.com.br/0Trm68a" className="">QUERO ACESSAR TODO O CONTEÚDO</GoldCTA>
+              <GoldCTA href="https://link.infinitepay.io/monteirolucena/VC1D-RMwuFfuksh-1997,00" className="">QUERO ACESSAR TODO O CONTEÚDO</GoldCTA>
               <WhatsappCTA>QUERO AJUDA PARA ME INSCREVER</WhatsappCTA>
             </div>
           </div>
