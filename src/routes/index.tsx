@@ -411,7 +411,7 @@ function Offer() {
               <span className="font-serif-display" style={{ fontSize: "1.5rem", color: "var(--beige)" }}>12x</span>
               <span className="font-serif-display gradient-gold-text" style={{ fontSize: "clamp(3rem,8vw,4.5rem)" }}>R$206,54</span>
             </div>
-            <p style={{ fontSize: "0.875rem", color: "var(--muted-foreground)" }}>ou R$1.997 no pix</p>
+            <p style={{ fontSize: "0.875rem", color: "var(--muted-foreground)" }}>ou R$1.300 no pix</p>
             <div className="divider-gold" style={{ margin: "2rem 0" }} />
             <ul style={{ textAlign: "left", display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "2rem", maxWidth: "28rem", margin: "0 auto 2rem" }}>
               {["Acesso imediato à plataforma", "Compra 100% segura", "Pix ou cartão em até 12x", "Garantia incondicional de 7 dias"].map((item, idx) => (
@@ -421,7 +421,7 @@ function Offer() {
               ))}
             </ul>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", alignItems: "center" }}>
-              <GoldCTA href="https://link.infinitepay.io/monteirolucena/VC1D-RMwuFfuksh-1997,00" className="">QUERO ACESSAR TODO O CONTEÚDO</GoldCTA>
+              <GoldCTA href="https://link.infinitepay.io/monteirolucena/VC1D-YUTyL50gDP-1300,00" className="">QUERO ACESSAR TODO O CONTEÚDO</GoldCTA>
               <WhatsappCTA>QUERO AJUDA PARA ME INSCREVER</WhatsappCTA>
             </div>
           </div>

@@ -60,7 +60,7 @@ export function StickyMobileBar() {
       className="mobile-bar"
     >
       <a
-        href="https://link.infinitepay.io/monteirolucena/VC1D-RMwuFfuksh-1997,00"
+        href="https://link.infinitepay.io/monteirolucena/VC1D-YUTyL50gDP-1300,00"
         target="_blank"
         rel="noopener noreferrer"
         className="btn-gold"
