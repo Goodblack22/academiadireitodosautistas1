@@ -409,7 +409,7 @@ function Offer() {
             </div>
             <div style={{ display: "flex", alignItems: "baseline", justifyContent: "center", gap: "0.5rem", marginBottom: "1rem" }}>
               <span className="font-serif-display" style={{ fontSize: "1.5rem", color: "var(--beige)" }}>12x</span>
-              <span className="font-serif-display gradient-gold-text" style={{ fontSize: "clamp(3rem,8vw,4.5rem)" }}>R$206,54</span>
+              <span className="font-serif-display gradient-gold-text" style={{ fontSize: "clamp(3rem,8vw,4.5rem)" }}>R$129,99</span>
             </div>
             <p style={{ fontSize: "0.875rem", color: "var(--muted-foreground)" }}>ou R$1.300 no pix</p>
             <div className="divider-gold" style={{ margin: "2rem 0" }} />
